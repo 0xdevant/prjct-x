@@ -1,4 +1,4 @@
-# Customizable ERC721 Collection Minting Template
+# Customizable ERC721 Collection Minting Package
 
 ## NFT Launch Technical Flow
 1. Generate the images and jsons (Generator Program)
