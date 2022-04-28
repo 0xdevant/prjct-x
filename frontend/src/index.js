@@ -4,11 +4,6 @@ import "./index.css"
 import App from "./App"
 import reportWebVitals from "./reportWebVitals"
 import Web3Provider from "./components/Web3Context"
-import CollectionConfig from "../../smart-contract/config/CollectionConfig"
-
-if (document.title === "") {
-  document.title = CollectionConfig.tokenName
-}
 
 ReactDOM.render(
   <React.StrictMode>

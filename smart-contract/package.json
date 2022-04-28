@@ -28,8 +28,8 @@
     "verify": "hardhat verify --constructor-args config/ContractArguments.js",
     "whitelist-open": "hardhat run scripts/2_whitelist_open.js",
     "whitelist-close": "hardhat run scripts/3_whitelist_close.js",
-    "public-sale-open": "hardhat run scripts/6_public_sale_open.js",
-    "public-sale-close": "hardhat run scripts/7_public_sale_close.js",
-    "reveal": "hardhat run scripts/8_reveal.js"
+    "public-sale-open": "hardhat run scripts/4_public_sale_open.js",
+    "public-sale-close": "hardhat run scripts/5_public_sale_close.js",
+    "reveal": "hardhat run scripts/6_reveal.js"
   }
 }

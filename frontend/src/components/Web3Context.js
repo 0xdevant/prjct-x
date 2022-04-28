@@ -1,6 +1,6 @@
 import { createContext, useState, useEffect } from "react"
 import { ethers } from "ethers"
-import PRJCTX from "../artifacts/contracts/Prjctx.sol/PRJCTX.json"
+import PRJCTX from "../artifacts/contracts/PRJCTX.sol/PRJCTX.json"
 
 export const Web3Context = createContext()
 
