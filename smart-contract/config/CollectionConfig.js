@@ -1,4 +1,4 @@
-const whitelistAddresses = require("./whitelist.json")
+const whitelistAddresses = require("./whitelist.json");
 
 const CollectionConfig = {
   contractName: "PRJCTX",
@@ -13,8 +13,8 @@ const CollectionConfig = {
   publicSale: {
     maxMintAmountPerTx: 2,
   },
-  contractAddress: "0x1461c64FAD65105CBe15d8B2DD897c2FB77a1461",
+  contractAddress: "0xdD7f48DfbC22Ee11518F44803Eeb43a95daD6685",
   whitelistAddresses: whitelistAddresses,
-}
+};
 
-module.exports = CollectionConfig
+module.exports = CollectionConfig;
