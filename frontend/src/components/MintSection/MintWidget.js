@@ -157,22 +157,25 @@ function MintWidget() {
             </div>
             {!account && <ConnectWallet connectWallet={_connectWallet} />}
 
-            {canMint() && account ? (
-              <div className="flex justify-center space-x-4">{mintAction}</div>
-            ) : null}
-            {!canMint() && account && (
-              <div className="flex justify-center text-white">
-                {isWhitelistMintEnabled ? (
-                  <p>
-                    You are not included in the <b>whitelist</b>.
-                  </p>
+            {account ? (
+              <div className="flex justify-center space-x-4">
+                {canMint() ? (
+                  { mintAction }
                 ) : (
-                  <p>
-                    The contract is <b>paused</b>.
-                  </p>
+                  <div className="flex justify-center text-white">
+                    {isWhitelistMintEnabled ? (
+                      <p>
+                        You are not included in the <b>whitelist</b>.
+                      </p>
+                    ) : (
+                      <p>
+                        The contract is <b>paused</b>.
+                      </p>
+                    )}
+                  </div>
                 )}
               </div>
-            )}
+            ) : null}
           </div>
         </div>
       </div>
